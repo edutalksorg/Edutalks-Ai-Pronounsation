@@ -7,6 +7,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
+    base:"/Edutalks-Ai-Pronounsation",
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "src"),
