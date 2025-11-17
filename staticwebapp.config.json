@@ -1,11 +1,30 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/static/*", "/images/*"]
+    "exclude": [
+      "/assets/*",
+      "/*.css",
+      "/*.js",
+      "/*.png",
+      "/*.jpg",
+      "/*.svg",
+      "/*.ico",
+      "/*.woff*"
+    ]
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html"
+    }
   },
   "mimeTypes": {
     ".json": "application/json",
     ".js": "application/javascript",
-    ".css": "text/css"
+    ".jsx": "application/javascript",
+    ".ts": "text/typescript",
+    ".tsx": "text/typescript",
+    ".css": "text/css",
+    ".woff": "font/woff",
+    ".woff2": "font/woff2"
   }
 }
